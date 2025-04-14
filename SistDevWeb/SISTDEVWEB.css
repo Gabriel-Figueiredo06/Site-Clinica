@@ -1,0 +1,405 @@
+@font-face {
+  font-family: 'Dolce';
+  src: url('Dolce\ Vita.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9FBFC5;
+    font-family: Arial, sans-serif;
+   overflow-x: hidden;
+
+   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar-container {
+    width: 100%;
+}
+
+#nav1 {
+  font-family: 'Dolce';
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: #0D4D66;
+    padding: 17px 20px;
+    width: 100%;
+    height: 35px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 60px; /* Aumenta o espaço entre os itens */
+    margin-top: 9px;
+}
+
+#equipes{
+  margin-top: -10px;
+}
+
+
+
+#nav1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    position: relative;
+}
+
+.login-container {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+#login {
+    background-color: #b5b1b6;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 460px;
+}
+
+
+#sigin{
+    background-color: #b5b1b6;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: rgb(200, 194, 113);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.img-container img {
+    width: 200%;
+    max-width: 1090px;
+    height:auto;
+    border-radius: 10px;
+    margin-top:70px;
+    margin-left: 50px;
+    
+}
+
+.img-container{
+    width: 400%; /* Ajuste esse valor conforme necessário */
+    max-width: 1590px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-inicio{
+    font-size: 20pt;
+    display: flex;
+    margin-left: 780px;
+    
+}
+
+/*TEXTO DENTRO DA IMAGEM  */
+.banner-text{ 
+font-family: 'Dolce';
+}
+
+
+
+/* Estilização da caixa de seleção de especialidades médicas */
+.consulta-container {
+    margin-top: 20px;
+    position: relative;
+    width: 300px;
+}
+
+.consulta-box {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #8000a0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.consulta-box:focus {
+    border-color: #c29ce5;
+}
+
+.dropdown-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 59%;
+    background-color: #ffffff69;
+    border: 1px inset #000000;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+.consulta-container{
+    display: flex;
+   margin-left: 65%;  
+   margin-top: -20%;
+}
+
+
+.exames-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+
+.titulo-exames{
+    margin-top: 320px;
+    background-color: #0d4d66b6;
+    font-size: 28px ;
+    color: rgb(227, 225, 225);
+    height: 35px;
+    width: 140%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6.4%;
+}
+
+
+
+  .exame {
+    background-color: #0d4d6669;
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    transition: all 1.0s ease;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+  }
+  
+
+.exame, .consulta, .titulo-exames, .titulo-consultas, h3{
+  font-family: 'Dolce';
+}
+
+
+
+  .exame img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .exame p {
+    font-family: 'Dolce';
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    overflow: hidden;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .exame:hover {
+    height: 420px;
+  }
+  
+  .exame:hover p {
+    opacity: 1;
+    max-height: 200px;
+  }
+  
+
+  .banner-container {
+    position: relative;
+    width: fit-content;
+    margin-top: 70px;
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 1090px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 20%;
+    right:1%;
+    color: rgb(255, 255, 255);
+    font-size: 18pt;
+    text-align: right;
+    font-weight: bold;
+}
+
+.secao-exames {
+    margin-top: 80px; /* distância entre o banner e os exames */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.titulo-consultas{
+    margin-top: 70px;
+    background-color: #0d4d66b6;
+    font-size: 28px ;
+    color: rgb(227, 225, 225);
+    height: 35px;
+    width: 140%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6.4%;
+}
+
+
+  .section-consultas-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+
+  .consulta{
+    position: relative;
+    background-color: #0d4d6669;
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    transition: all 1.0s ease;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+  }
+
+  .consulta img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .consulta p{
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    overflow: hidden;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+
+
+  .consulta:hover{
+    height: 420px;
+  }
+
+.consulta:hover p{
+    opacity: 1;
+    max-height: 200px;
+}
+
+.apresentacao-equipes {
+  background-color: #E8EAE5; /* Fundo branco da seção toda */
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  margin: 120px;
+}
+
+.apresentacao-equipes h2 {
+  font-family: 'Dolce';
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0D4D66;
+  font-size: 26px;
+}
+
+.apresentacao-equipes p{
+  font-family: 'Dolce';
+}
+
+.perfil-medico {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #f9f9f9; /* Leve contraste dentro do branco */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-left: 10px;
+}
+
+.perfil-medico img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.info-medico {
+  flex: 1;
+}
+
+.info-medico h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.info-medico p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.perfil-medico2{
+flex-direction: row-reverse;
+justify-content: flex-end;
+margin-left: auto;
+margin-right: 10px;
+
+}
+
+.perfil-medico:hover{
+ transition:0.3s ease, box-shadow 0.3s ease; 
+  border:inset #0D4D66 1px ;
+  box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
+}

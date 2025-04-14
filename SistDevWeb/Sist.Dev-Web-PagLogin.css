@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d4d66ca;
+}    
+
+
+
+#secLogin{
+    background-color:#9FBFC5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Garante que os elementos fiquem em coluna */
+    height: auto; /* Deixa a altura flexível para se ajustar ao conteúdo */
+    width: 500px;
+    border-radius: 5%;
+    border: #ffffff9d solid 2px;
+    padding: 20px; /* Adiciona um pouco de espaço interno */
+}
+
+
+#nome-usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 75%;
+    margin-left: 152px;
+    margin-top: 50px;
+    
+}
+
+
+#nome-usuario input{
+    padding: 12px;
+    border-radius: 5%;
+    border: 1.5px solid #020202;
+    width: 50%;
+    height: 1%;
+}   
+
+#butaoLogin{
+    width: 120px;
+    height: 40px;
+    background-color: #26425E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block; /* Garante que ele fique em uma nova linha */
+    margin: 10px auto; /* Centraliza horizontalmente */
+    text-align: center;
+    margin-left: 15px;
+
+   
+    
+}
+
+#butaoLogin:hover {
+    background-color: #0D1E4C;
+    
+}
+
+#nome-usuario p {
+    font-size: 14px; /* Reduz um pouco o tamanho do texto */
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Remove margens extras */
+}
+
