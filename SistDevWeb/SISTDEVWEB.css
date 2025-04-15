@@ -108,11 +108,6 @@ html{
     
 }
 
-/*TEXTO DENTRO DA IMAGEM  */
-.banner-text{ 
-font-family: 'Dolce';
-}
-
 
 
 /* Estilização da caixa de seleção de especialidades médicas */
@@ -183,9 +178,8 @@ font-family: 'Dolce';
 
 .titulo-exames{
     margin-top: 320px;
-    background-color: #0d4d66b6;
     font-size: 28px ;
-    color: rgb(227, 225, 225);
+    color: #ffffff;
     height: 35px;
     width: 140%;
     justify-content: center;
@@ -250,10 +244,11 @@ font-family: 'Dolce';
 
 .banner-img {
     width: 100%;
-    max-width: 1090px;
-    height: auto;
-    border-radius: 10px;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 5px;
     display: block;
+    margin-top: -5.5%;
 }
 
 .banner-text {
@@ -276,9 +271,8 @@ font-family: 'Dolce';
   
 .titulo-consultas{
     margin-top: 70px;
-    background-color: #0d4d66b6;
     font-size: 28px ;
-    color: rgb(227, 225, 225);
+    color: rgb(255, 255, 255);
     height: 35px;
     width: 140%;
     justify-content: center;
