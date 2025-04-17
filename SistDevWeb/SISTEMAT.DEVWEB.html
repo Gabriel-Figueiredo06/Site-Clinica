@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
   <head>
       <meta charset="UTF-8">
@@ -14,7 +14,7 @@
 
 
     <!--NAV-BAR-->
-  <div class="navbar-container">
+<div class="navbar-container">
     <nav id="nav1">
         <div class="nav-links">
             <div class="dropdown">
@@ -24,7 +24,7 @@
             <div class="dropdown">
                 <a href="#div-consultas-titulo" id="servicos">Consultas</a>
             </div id="equipes">
-            <a href="equipes.html" id="equipes">Equipes</a>
+            <a href="#apre-equipes" id="equipes">Equipes</a>
         </div>
 
         <!-- Botão LOGIN alinhado -->
@@ -39,21 +39,6 @@
       <img src="imagens/img-azul1nova.jpg" alt="" class="banner-img" id="imagem-principal">
       <h1 class="banner-text" style="font-family: 'Dolce'; font-size:25pt;">Agende conosco <br> a sua consulta ou exame!</h1>
     </div>
-    
-
-
-<div class="consulta-container">
-  <input type="text" id="consultaInput" class="consulta-input" placeholder="Área da consulta" readonly />
-  <button class="dropdown-btn" onclick="toggleDropdown()">▼</button>
-  <div class="dropdown-list" id="dropdownList">
-    <div onclick="selectOption('Cardiologia')">Cardiologia</div>
-    <div onclick="selectOption('Dermatologia')">Dermatologia</div>
-    <div onclick="selectOption('Ginecologia')">Ginecologia</div>
-    <div onclick="selectOption('Ortopedia')">Ortopedia</div>
-    <div onclick="selectOption('Pediatria')">Pediatria</div>
-  </div>
-</div>
-   
   
 
    <!--SECTION MENORES DE BAIXO-->
@@ -131,7 +116,7 @@
        </div>
    
 
-       <div class="apresentacao-equipes">
+       <div class="apresentacao-equipes" id="apre-equipes"> 
         <h2>Conheça a nossa equipe:</h2>
       
         <div class="perfil-medico">
@@ -186,7 +171,8 @@
             </p>
           </div>
         </div>
+
+
   
- 
 </body>
 </html>
